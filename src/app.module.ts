@@ -8,7 +8,7 @@ import { CategoryModule } from './category/category.module';
 import { MongooseModule } from '@nestjs/mongoose';
 
 @Module({
-  imports: [MongooseModule.forRoot('mongodb+srv://kmmramos:Year2023-0116@cluster0.rsugnbh.mongodb.net/?retryWrites=true&w=majority'), 
+  imports: [MongooseModule.forRoot('mongodb+srv://username:password@cluster0.rsugnbh.mongodb.net/?retryWrites=true&w=majority'), 
     GraphQLModule.forRoot<ApolloDriverConfig>({
     autoSchemaFile: true,
     driver: ApolloDriver,
